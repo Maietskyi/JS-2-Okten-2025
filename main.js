@@ -1,362 +1,285 @@
-// JS. ДЗ 2
+// JS. ДЗ 3
 // Коди з лекцій та коди з ДЗ
-//
-// https://github.com/OktenSchool/javascript.git
-//
-//
-//
-//     ДЗ:
-//
-//
-//
-//         #67kfznmiMl
-//
-// – Створити масив, наповнити його 10 елементами будь-якого типу, вивести кожен елемент в консоль
-//
-// let array = ["1", 2, 'try', false, 5, {}, [], 'щось', 6, true];
-// console.log(array[0], typeof array[0]);
-// console.log(array[1], typeof array[1]);
-// console.log(array[2], typeof array[2]);
-// console.log(array[3], typeof array[3]);
-// console.log(array[4], typeof array[4]);
-// console.log(array[5], typeof array[5]);
-// console.log(array[6], typeof array[6]);
-// console.log(array[7], typeof array[7]);
-// console.log(array[8], typeof array[8]);
-// console.log(array[9], typeof array[9]);
-//
-//
-// #LARqoUj5I
-//
-// – Створити 3 об’єкти які описують книги. Поля об’єкту : title ,pageCount, genre.
-//
-// let book1 = {
-//     title: 'Гарі Потер',
-//     pageCount: 552,
-//     genre: 'пригоди',
-// }
-// let book2 = {
-//     title: 'Бідний тато',
-//     pageCount: 242,
-//     genre: 'бізнес',
-// }
-// let book3 = {
-//     title: 'Думай і багатій',
-//     pageCount: 310,
-//     genre: 'психологія',
-// }
-// console.log(book1)
-// console.log(book2)
-// console.log(book3)
-//
-//
-//     #sA3Gg1sCp
-//
-// – Створити 3 об’єкти, які описують книги. Поля об’єкту : title ,pageCount, genre, authors. Поле “автори” – являється  масивом. Кожен автор має поля name та age.
-//
-//
-// let book1 = {
-//     title: 'Гарі Потер',
-//     pageCount: 552,
-//     genre: 'пригоди',
-//     authors: [
-//         {
-//             name: 'Гаррі',
-//             age: 54
-//         },
-//         {
-//             name: 'Поттер',
-//             age: 84
-//         }
-//     ]
-// }
-// let book2 = {
-//     title: 'Бідний тато',
-//     pageCount: 242,
-//     genre: 'бізнес',
-//     authors: [
-//         {
-//             name: 'Трамп',
-//             age: 72
-//         },
-//         {
-//             name: 'Кійосакі',
-//             age: 64
-//         }
-//     ]
-// }
-// let book3 = {
-//     title: 'Думай і багатій',
-//     pageCount: 310,
-//     genre: 'психологія',
-//     authors: [
-//         {
-//             name: 'Піттер',
-//             age: 63
-//         },
-//         {
-//             name: 'Майк',
-//             age: 48
-//         }
-//     ]
-// }
-// console.log(book1)
-// console.log(book2)
-// console.log(book3)
-//
-//
-//     #jCHFnEbdmFd
-//
-// – Створити масив з 10 об’єктами, які описують сутніть “користувач”. Поля: name, username,password. Вивести в консоль пароль кожного користувача
-//
-//
-// let users = [
-//     {name: 'Name2', username: 'UserName2', password: 86387},
-//     {name: 'Name1', username: 'UserName1', password: 154623},
-//     {name: 'Name3', username: 'UserName3', password: 78287},
-//     {name: 'Name4', username: 'UserName4', password: 17511},
-//     {name: 'Name5', username: 'UserName5', password: 852763},
-//     {name: 'Name6', username: 'UserName6', password: 258967},
-//     {name: 'Name7', username: 'UserName7', password: 796837},
-//     {name: 'Name8', username: 'UserName8', password: 7827},
-//     {name: 'Name9', username: 'UserName9', password: 15373},
-//     {name: 'Name10', username: 'UserName10', password: 96382863}
-// ]
-//
-// console.log(users[0].password);
-// console.log(users[1].password);
-// console.log(users[2].password);
-// console.log(users[3].password);
-// console.log(users[4].password);
-// console.log(users[5].password);
-// console.log(users[6].password);
-// console.log(users[7].password);
-// console.log(users[8].password);
-// console.log(users[9].password);
-//
-//
-//
-// #coYydZuaeEB
-//
-// – описати масив, в якому буде зберігатись інформація про температуру вранці, вдень і ввечері за термін в 7 днів. 
-// Як зробити цей масив – вам потрібно подумати. Нормальних варіантів опису – 2. 
-// Варіант, коли в вас буде одновимірний масив з 21 значенням виключаємо одразу
-//
-//
-//
-// let temperatures = [
-//     {day1: [8, 28, 19]},
-//     {day2: [9, 29, 20]},
-//     {day3: [10, 30, 21]},
-//     {day4: [11, 31, 22]},
-//     {day5: [12, 32, 23]},
-//     {day6: [6, 26, 17]},
-//     {day7: [7, 27, 18]}
-// ]
-// 
-// console.log(temperatures)
-//
-//
-//
-// #bAUsaq6LI
-//
-// – Є змінна х, якій ви надаєте довільне числове значення.
-//
-//     Якщо змінна x не дорівнює нулю, виведіть ‘Вірно’, інакше виведіть ‘Невірно’. Перевірте  скрипт при a, що дорівнює 1, 0, -3
-//
-//
-// let x;
-// // x = 1;
-// // x = 0;
-// // x = -3;
-// 
-// if (x !==0){
-//     console.log('Вірно')
-// } else {
-//      console.log('Невірно')
-// }
-//
-//
-//
-// #3ckURgvs
-//
-// – Дано змінну time яка рівна числу від 0 до 59. Потрібно написати код, який перевірить, до якої четверті години попадає число
-//
-// (в першу, другу, третю або четверту частину години).
-//
-//
-// let time = 15;
-// 
-// if (time >= 0 && time < 15){
-//         console.log('Перша чверть')
-// } else if (time >= 15 && time < 30){
-//         console.log('Друга чверть')
-// } else if (time >= 30 && time < 45){
-//         console.log('Третя чверть')
-// } else if (time >= 45 && time < 59){
-//         console.log('Четверта чверть')
-// } else {
-//         console.log('Немає такої хвилини');
-// }
-//
-//
-// #UMoNq4biWGe
-//
-// – У змінній day дано якесь число від 1 до 31. Потрібно визначити, у яку половину (декаду) місяця потрапляє це число (у першу, другу чи третю).
-//
-//
-//
-//
-//
-// #KzrtqyQ
-//
-// – Скласти розклад на тиждень за домопогою switch. Користувач вводить порядковий номер дня тижня і на 
-// екрані відображається інфа, що заплановано на цей день (можна замість плану на день, назву дня англійською).
-//
-//
-// let days = prompt('Введіть день тижня');
-// 
-// switch (days){
-//     case 'понеділок':
-//         console.log('На понеділок заплановано: 1.2.3.');
-//     break;
-//     case 'вівторок':
-//         console.log('На вівторок заплановано: 1.2.3.');
-//     break;
-//     case 'середа':
-//         console.log('На середу заплановано: 1.2.3.');
-//     break;
-//     case 'четвер':
-//         console.log('На четвер заплановано: 1.2.3.');
-//     break;
-//     case "п'ятниця":
-//         console.log('На ятницю заплановано: 1.2.3.');
-//     break;
-//     case 'субота':
-//         console.log('На суботу заплановано: 1.2.3.');
-//     break;
-//     case 'неділя':
-//         console.log('На неділю заплановано: 1.2.3.');
-//     break;
-//     default:
-//         console.log('Немає такого дня тижня');
-// }
-// 
-// let days1 = +prompt('Введіть числом день тижня');
-// 
-// switch (days1){
-//     case 1:
-//         console.log('На понеділок заплановано: 1.2.3.');
-//     break;
-//     case 2:
-//         console.log('На вівторок заплановано: 1.2.3.');
-//     break;
-//     case 3:
-//         console.log('На середу заплановано: 1.2.3.');
-//     break;
-//     case 4:
-//         console.log('На четвер заплановано: 1.2.3.');
-//     break;
-//     case 5:
-//         console.log('На ятницю заплановано: 1.2.3.');
-//     break;
-//     case 6:
-//         console.log('На суботу заплановано: 1.2.3.');
-//     break;
-//     case 7:
-//         console.log('На неділю заплановано: 1.2.3.');
-//     break;
-//     default:
-//         console.log('Немає такого дня тижня');
-// }
-//
-//
-//
-//     #uwsz1RnTQJ1
-//
-// – Користувач вводить або має два числа.
-//
-//         Потрібно знайти та вивести максимальне число з тих двох .
-//
-//         Також потрібно врахувати, коли введені рівні числа.
-//
-//
-// let number1 = prompt('Введіть перше число')
-// let number2 = prompt('Введіть друге число')
 
-// if (number1 > number2){
-//     console.log(`Перше число більше - ${number1}`);
-// } else if (number2 > number1){
-//     console.log(`Друге число більше - ${number2}`);
-// } else if (number2 === number1){
-//     console.log(`Введені числа однакові - ${number2}`);
-// } else {
-//     console.log(`Щось пішло не так`);    
+// https://github.com/OktenSchool/javascript.git
+
+// #y7crMeFwHcS
+
+// – За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом всередині
+
+// for (let i = 0; i < 10; i++){
+
+//     document.write('<div> Okten Sholl </div>') 
 // }
-//
-//
-//
-//         #iBvqtjEm
-//
-// – є змінна х, яка може прийняти будь-яке значення (стрінг, число, undefined, null  і тд включно). Напишіть код, який
-//
-//     буде присвоювати змінній х значення “default”,  якщо ви намагаєтесь присвоїти в неї falsy-значення (хибноподібні, тобто ті, які приводиться до false, а це 0 null undefined і тд).
-//
-//
-// let x = prompt('Введіть') === (0 || NaN || null || undefined || '')? 'default':'все добре';
-// console.log(x)
-// 
-// З розв'язку дз
-// let x = 0;
-//     if (x === 0 || x === null || x === undefined || x === NaN || x === '') {
-//         x = 'default';
+
+
+// #TYj7ncx
+
+// – За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом і індексом всередині
+
+// for (let i = 0; i < 10; i++){
+
+//     document.write(`<div> Okten Sholl - ${i+1} </div>`) 
+// }
+
+// #uzkt71dp
+
+// – За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині.
+
+// let i = 0;
+//     while (i < 20) {
+//         document.write('<h1>Misha student Okten sholl</h1>');
+//         i++;
 //     }
-// 
-//     let x = null;
-// 
-//     if (!x) {
-//         x = 'default';
+
+// #OeT7t3uUMFi
+
+// – За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
+
+// let i = 0;
+//     while (i < 20) {
+//         document.write(`<h1>Misha student Okten sholl ${i+1}</h1>`);
+//         i++;
 //     }
+
+// #vLSZKMlO
+
+// – Використовуючи данні з масиву, за допомоги document.write та циклу
+
+// побудувати структуру за шаблоном
+
+// Масив:
+
+ 
+
+// let listOfItems = [‘html’, ‘css’, ‘javascript’, ‘mysql’, ‘mongodb’, ‘react’, ‘angular’, ‘node.js’];
+
+ 
+
+// ШАБЛОН:
+
+//  <ul>
+
+//     <li>ITEM OF ARRAY</li>
+
+//     <!–
+
+//         і тд інші об’єкти масиву
+
+//          …
+
+//          …
+
+//          …
+
+//     –>
+
+// </ul>
+
+ 
+
+// замість ‘ITEM OF ARRAY’ підставити елемент з масиву, щоб вийшов цілий список з даними з масиву
+
+
+// let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
+
+// document.write('<ul>')
+// for (let item of listOfItems){
+//     document.write(`<li>${item}</li>`)
+
+// }
+// document.write('</ul>') 
+ 
+
+// #Hdjws7E
+
+// Використовуючи данні з масиву, за допомоги document.write та циклу
+
+// побудувати структуру по шаблону
+
+// Великими літерами прописанні властивості об’єкту які потрібно впровадити в шаблон
+
+ 
+
+// let products = [
+//
+// {
+//
+// title: 'milk',
+//
+// price: 22,
+//
+// image: 'https://radymo.ua/wp-content/uploads/2019/08/Bez-ymeny-1.png'
+//
+// },
+//
+// {
+//
+// title: 'juice',
+//
+// price: 27,
+//
+// image: 'https://images-na.ssl-images-amazon.com/images/I/61jL2GCuKLL._SX679_PIbundle-24,TopRight,0,0_AA679SH20_.jpg'
+//
+// },
+//
+// {
+//
+// title: 'tomato',
+//
+// price: 47,
+//
+// image: 'https://dictionary.cambridge.org/ru/images/thumb/tomato_noun_001_17860.jpg?version=5.0.74'
+//
+// },
+//
+// {
+//
+// title: 'tea',
+//
+// price: 15,
+//
+// image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXnN40GpO1lPwEos5WQ7vCLi8Y2Nu_JZvglQ&s'
+//
+// },
+//
+// ];
 //
 //
 //
-//     #awLXL6TBzg
+// // ШАБЛОН
 //
-//     з файлу arrays.js ( лежить у вкладеннях)  взяти масив coursesAndDurationArray. 
-// За допомогою іф перевірити кожен його елемент на тривалість навчання. 
-// У випадку, якщо тривалість довша за 5 місяців, вивести в консоль “Супер”.
-// 
-// let coursesAndDurationArray = [
-//     {title: 'JavaScript Complex', monthDuration: 5},
-//     {title: 'Java Complex', monthDuration: 6},
-//     {title: 'Python Complex', monthDuration: 6},
-//     {title: 'QA Complex', monthDuration: 4},
-//     {title: 'FullStack', monthDuration: 7},
-//     {title: 'Frontend', monthDuration: 4}
+// //  <div class=”product-card”>
+//
+// //         <h3 class=”product-title”>TITLE. Price – PRICE</h3>
+//
+// //         <img src=”IMAGE” alt=”” class=”product-image”>
+//
+// // </div>
+//
+// // Замість TITLE PRICE IMAGE – підставити відповідні поля з об’єкту
+//
+//
+// for (let product of products){
+//     document.write(`<div class='product-card'>
+//
+//         <h3 class='product-title'>${product.title}. Price – ${product.price}</h3>
+//
+//         <img src='${product.image}' alt='' class='product-image'>
+//
+//     </div>`)
+// }
+
+
+ 
+
+// ——————–
+
+// #4WrHwFTEop0
+
+// є масив
+
+// let users = [
+
+//     {name: ‘vasya’, age: 31, status: false},
+
+//     {name: ‘petya’, age: 30, status: true},
+
+//     {name: ‘kolya’, age: 29, status: true},
+
+//     {name: ‘olya’, age: 28, status: false},
+
+//     {name: ‘max’, age: 30, status: true},
+
+//     {name: ‘anya’, age: 31, status: false},
+
+//     {name: ‘oleg’, age: 28, status: false},
+
+//     {name: ‘andrey’, age: 29, status: true},
+
+//     {name: ‘masha’, age: 30, status: true},
+
+//     {name: ‘olya’, age: 31, status: false},
+
+//     {name: ‘max’, age: 31, status: true}
+
 // ];
 
-// // for (let i = 0; i < coursesAndDurationArray.length; i++) {
-// //     let course = coursesAndDurationArray[i];
-// //     if (course.monthDuration > 5) {
-// //         console.log('Супер');
-// //     }
-// // }
+//  за допомогою циклу вивести:
 
-// if (coursesAndDurationArray[0].monthDuration > 5){
-//     console.log('Супер')
-// };
-// if (coursesAndDurationArray[1].monthDuration > 5){
-//     console.log('Супер')
-// };
-// if (coursesAndDurationArray[2].monthDuration > 5){
-//     console.log('Супер')
-// };
-// if (coursesAndDurationArray[3].monthDuration > 5){
-//     console.log('Супер')
-// };
-// if (coursesAndDurationArray[4].monthDuration > 5){
-//     console.log('Супер')
-// };
-// if (coursesAndDurationArray[5].monthDuration > 5){
-//     console.log('Супер')
-// };
+//  – користувачів зі статусом true
+
+//  – користувачів зі статусом false
+
+//  – користувачів, які старші за 30 років
+
+
+
+let users = [
+    {name: 'vasya', age: 31, status: false},
+    {name: 'petya', age: 30, status: true},
+    {name: 'kolya', age: 29, status: true},
+    {name: 'olya', age: 28, status: false},
+    {name: 'max', age: 30, status: true},
+    {name: 'anya', age: 31, status: false},
+    {name: 'oleg', age: 28, status: false},
+    {name: 'andrey', age: 29, status: true},
+    {name: 'masha', age: 30, status: true},
+    {name: 'olya', age: 31, status: false},
+    {name: 'max', age: 31, status: true}
+];
+
+
+ 
+
+// =============
+
+ 
+
+// За допомогою циклу вивести всю інформацію про користувачів, використовуючи шаблон
+
+ 
+
+//         <div class=”users-box”>
+
+//             <div class=”user-block”>
+
+//                 <h2>ID – NAME – USERNAME </h2>
+
+//                 <h3>EMAIL – PHONE</h3>
+
+//                 <div class=”address-block”>
+
+//                     <p>City – ADDRESS.CITY</p>
+
+//                     <p>Street – ADDRESS.STREET</p>
+
+//                     <p>Suite – ADDRESS.SUITE</p>
+
+//                     <p>Zip code – ADDRESS.ZIPCODE</p>
+
+//                 </div>
+
+//             </div>
+
+ 
+
+//             <!–
+
+//             …
+
+//             …
+
+//             …
+
+//             other users
+
+ 
+
+ 
+
+//             –>
+
+ 
+
+// за допомогою стилів, побудувати сітку по 2 об’єктах в рядок
