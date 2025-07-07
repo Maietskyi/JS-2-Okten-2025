@@ -50,11 +50,9 @@
 
 // Масив:
 
- 
 
 // let listOfItems = [‘html’, ‘css’, ‘javascript’, ‘mysql’, ‘mongodb’, ‘react’, ‘angular’, ‘node.js’];
 
- 
 
 // ШАБЛОН:
 
@@ -76,7 +74,6 @@
 
 // </ul>
 
- 
 
 // замість ‘ITEM OF ARRAY’ підставити елемент з масиву, щоб вийшов цілий список з даними з масиву
 
@@ -89,7 +86,7 @@
 
 // }
 // document.write('</ul>') 
- 
+
 
 // #Hdjws7E
 
@@ -99,7 +96,6 @@
 
 // Великими літерами прописанні властивості об’єкту які потрібно впровадити в шаблон
 
- 
 
 // let products = [
 //
@@ -171,8 +167,6 @@
 // }
 
 
- 
-
 // ——————–
 
 // #4WrHwFTEop0
@@ -214,7 +208,6 @@
 //  – користувачів, які старші за 30 років
 
 
-
 let users = [
     {name: 'vasya', age: 31, status: false},
     {name: 'petya', age: 30, status: true},
@@ -229,16 +222,41 @@ let users = [
     {name: 'max', age: 31, status: true}
 ];
 
+//  – користувачів зі статусом true
+// for (let user of users) {
+//     if (user.status === true) {
+//         document.write(`<div>
+//             Name: ${user.name}, Age: ${user.age}, Status: ${user.status} <br>
+//             <p></p>
+//         </div>`);
+//     }
+// }
+//
+//  – користувачів зі статусом false
+// for (let user of users) {
+//     if (!user.status) {
+//         document.write(`<div>
+//             Name: ${user.name}, Age: ${user.age}, Status: ${user.status} <br>
+//             <p></p>
+//         </div>`);
+//     }
+// }
+//  – користувачів, які старші за 30 років
+// for (let user of users) {
+//     if (user.age > 30) {
+//         document.write(`<div>
+//             Name: ${user.name}, Age: ${user.age}, Status: ${user.status} <br>
+//             <p></p>
+//         </div>`);
+//     }
+// }
 
- 
 
 // =============
 
- 
 
 // За допомогою циклу вивести всю інформацію про користувачів, використовуючи шаблон
 
- 
 
 //         <div class=”users-box”>
 
@@ -262,7 +280,6 @@ let users = [
 
 //             </div>
 
- 
 
 //             <!–
 
@@ -274,12 +291,8 @@ let users = [
 
 //             other users
 
- 
-
- 
 
 //             –>
 
- 
 
 // за допомогою стилів, побудувати сітку по 2 об’єктах в рядок
