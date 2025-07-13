@@ -175,17 +175,89 @@
 
 // – створити функцію, яка приймає масив об’єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об’єкту окремий блок.
 
+// function solve(obj) {
+//     for (let ob of obj) {
+//         document.write(`<div>${ob.id}, ${ob.name}, ${ob.age}</div>`)
+//     }
+// }
+//
+// let users = [
+//     {
+//         id: 1,
+//         name: 'Misha',
+//         age: 64
+//     },
+//     {
+//         id: 2,
+//         name: 'Misha',
+//         age: 64
+//     },
+//     {
+//         id: 3,
+//         name: 'Misha',
+//         age: 64
+//     },
+//     {
+//         id: 4,
+//         name: 'Misha',
+//         age: 64
+//     }
+// ]
+//
+// solve(users)
 
+// solve([
+//     {
+//         id: 1,
+//         name: 'Misha',
+//         age: 64
+//     },
+//     {
+//         id: 2,
+//         name: 'Misha',
+//         age: 64
+//     },
+//     {
+//         id: 3,
+//         name: 'Misha',
+//         age: 64
+//     },
+//     {
+//         id: 4,
+//         name: 'Misha',
+//         age: 64
+//     }
+// ]);
 
 // #pghbnSB
 
 // – створити функцію яка повертає найменьше число з масиву
 
+// function minNumber(number) {
+//     let min = number[0];
+//     for (let i = 1; i <= number.length; i++) {
+//         if (i < min) {
+//             min = number[i];
+//         }
+//     }
+//     return min;
+// }
+//
+// console.log(minNumber([54, 11, 68, 102, -10]));
 
 // #EKRNVPM
 
 // – створити функцію sum(arr), яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад sum([1,2,10]) //->13
-
+//
+// function sum(arr) {
+//     let summa = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         summa += arr[i];
+//     }
+//     return summa;
+// }
+//
+// console.log(sum([1, 2, 10]));
 
 // #kpsbSQCt2Lf
 
@@ -193,6 +265,14 @@
 
 // Приклад  swap([11,22,33,44],0,1) //=> [22,11,33,44]
 
+// function swap(arr,index1,index2) {
+//     let zam = arr[index1];
+//     arr[index1] = arr[index2];
+//     arr[index2] = zam;
+//     return arr;
+// }
+//
+// console.log(swap([11, 22, 33, 44], 0, 1));
 
 // #mkGDenYnNjn.html
 
