@@ -9,32 +9,31 @@
 
 // – створити функцію, яка обчислює та повертає площу прямокутника зі сторонами  а і б
 // function area (a, b){
-//     c = a * b
-//     console.log(c)
+//     return a * b
 // }
-// area(5,6)
+// console.log(area(5,6))
 
 // function area (a, b){
-//     console.log(a * b)
+//     return a * b
 // }
-// area(5,6)
-
+// console.log(area(5,6))
 
 // #ETGAxbEn8l
 
 // – створити функцію, яка обчислює та повертає площу кола з радіусом r
 // function areaKolo (r){
-//     console.log(r * 3.14)
+//      return r * 3.14
 // }
-// areaKolo(4)
+// let result = areaKolo(4)
+// console.log(result)
 
 // #Mbiz5K4yFe7
 
 // – створити функцію, яка обчислює та повертає площу циліндру висотою h, та радіусом r
 // function areaKub(h , r){
-//     console.log( h * r * r * 3.14 )
+//     return  h * r * r * 3.14
 // }
-// areaKub(8, 5)
+// console.log( areaKub(8, 5))
 
 // #SIdMd0hQ
 
@@ -124,8 +123,17 @@
 // #hOL6126
 
 // – створити функцію, яка створює ul з трьома елементами li та виводить його через document.write. Текст li задати через аргумент всім однаковий
-
-
+// -
+//     -
+//         -
+//             -
+//                 -
+//                     -
+//                         -
+//                             -
+//                                 -
+//                                     -
+//                                         -
 
 // #0Kxco1edSN
 
