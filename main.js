@@ -4,7 +4,6 @@
 // https://github.com/OktenSchool/javascript.git
 
 
-
 // #I2XsG6f
 
 // – створити функцію, яка обчислює та повертає площу прямокутника зі сторонами  а і б
@@ -123,29 +122,54 @@
 // #hOL6126
 
 // – створити функцію, яка створює ul з трьома елементами li та виводить його через document.write. Текст li задати через аргумент всім однаковий
-// -
-//     -
-//         -
-//             -
-//                 -
-//                     -
-//                         -
-//                             -
-//                                 -
-//                                     -
-//                                         -
+// function writer (text){
+//     document.write(`<ul>
+//         <li>${text}</li>
+//         <li>${text}</li>
+//         <li>${text}</li>
+//         </ul>`)
+// }
+// writer('Misha');
+// writer('Okten');
 
 // #0Kxco1edSN
 
 // – створити функцію, яка створює ul з  елементами li. Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл) та виводить його через document.write
 
-
+// function writer(text, index) {
+//     document.write(`<ul>`)
+//     for (i = 0; i < index; i++) {
+//         document.write(`<li>${text}</li>`)
+//     }
+//     document.write(`</ul>`)
+// }
+//
+// writer('Misha', 3);
+// writer('Okten', 14);
 
 // #gEFoxMMO
 
 // – створити функцію, яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список (ul li) та виводить його через document.write
 
+// function writer(array) {
+//     document.write(`<ul>`)
+//     for (i = 0; i < array.length; i++) {
+//         document.write(`<li>${array[i]}</li>`)
+//     }
+//     document.write(`</ul>`)
+// }
+//
+// writer(['Misha', 3, true, 56]);
 
+// function writer(array) {
+//     document.write(`<ul>`)
+//     for (const item of array) {
+//         document.write(`<li>${item}</li>`)
+//     }
+//     document.write(`</ul>`)
+// }
+//
+// writer(['Misha', 3, true, 56]);
 
 // #bovDJDTIjt
 
@@ -158,11 +182,9 @@
 // – створити функцію яка повертає найменьше число з масиву
 
 
-
 // #EKRNVPM
 
 // – створити функцію sum(arr), яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад sum([1,2,10]) //->13
-
 
 
 // #kpsbSQCt2Lf
@@ -170,7 +192,6 @@
 // – створити функцію swap(arr,index1,index2). Функція міняє місцями значення у відповідних індексах
 
 // Приклад  swap([11,22,33,44],0,1) //=> [22,11,33,44]
-
 
 
 // #mkGDenYnNjn.html
