@@ -303,6 +303,5 @@
 // let value = exchange(10000,[{currency:'USD',value:25},{currency:'EUR',value:42}],'USD')
 // let value2 = exchange(10000,[{currency:'USD',value:25},{currency:'EUR',value:42}],'EUR')
 
-
 // console.log(value)
 // console.log(value2)
