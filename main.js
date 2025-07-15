@@ -1,263 +1,162 @@
-// JS. ДЗ 4
+// Текстовий урок
+// JS. ДЗ 5
 // Коди з лекцій та коди з ДЗ
 
 // https://github.com/OktenSchool/javascript.git
 
 
+// Тут ті самі завдання, що і в занятті про базові функції, але зробити їх потрібно за допомоги стрілочних функцій !!!
+
+
 // #I2XsG6f
 
-// – створити функцію, яка обчислює та повертає площу прямокутника зі сторонами  а і б
-// function area (a, b){
-//     return a * b
-// }
-// console.log(area(5,6))
+// – створити функцію, яка обчислює та повертає площу прямокутника зі сторонами а і б
 
-// function area (a, b){
-//     return a * b
-// }
-// console.log(area(5,6))
+// let area = (a, b) => a * b;
+// let araea1 = area(5, 9)
+
+// console.log(araea1)
+// console.log(area(6, 8))
 
 // #ETGAxbEn8l
 
 // – створити функцію, яка обчислює та повертає площу кола з радіусом r
-// function areaKolo (r){
-//      return r * 3.14
-// }
-// let result = areaKolo(4)
-// console.log(result)
+
+// let circleArea = (r) => Math.round(Math.PI * r * r);
+
+// console.log(circleArea(5))
 
 // #Mbiz5K4yFe7
 
 // – створити функцію, яка обчислює та повертає площу циліндру висотою h, та радіусом r
-// function areaKub(h , r){
-//     return  h * r * r * 3.14
-// }
-// console.log( areaKub(8, 5))
+
+// let cylinderArea = (r, h) => Math.round(Math.PI * r * r * h)
+
+// console.log(cylinderArea(8, 7))
 
 // #SIdMd0hQ
 
 // – створити функцію, яка приймає масив та виводить кожен його елемент
 
-// function printer (array){
-//     for (let arr of array){
-//         console.log(arr)
+// let array = [11,22,33,44,55,66,77,88,99, 'okten']
+
+// let iterator = (arr) => {
+//     for (let i = 0; i < arr.length; i++){
+//         console.log(arr[i])
 //     }
 // }
 
-// let books = [
-//     {
-//         title: "Тіні забутих предків",
-//         pages: 160,
-//         authors: ["Михайло Коцюбинський"],
-//         genres: ["драма", "історичний роман"]
-//     },
-//     {
-//         title: "Гаррі Поттер і філософський камінь",
-//         pages: 320,
-//         authors: ["Джоан Роулінг"],
-//         genres: ["фентезі", "пригоди"]
-//     },
-//     {
-//         title: "Майстер і Маргарита",
-//         pages: 400,
-//         authors: ["Михайло Булгаков", "Райс"],
-//         genres: ["містика", "фантастика", "сатира"]
-//     },
-//     {
-//         title: "Сто років самотності",
-//         pages: 450,
-//         authors: ["Габрієль Гарсія Маркес"],
-//         genres: ["магічний реалізм", "роман",]
-//     },
-//     {
-//         title: "Кобзар",
-//         pages: 250,
-//         authors: ["Тарас Шевченко", "Українка", "Франко"],
-//         genres: ["поезія", "класика"]
-//     },
-//     {
-//         title: "1984",
-//         pages: 328,
-//         authors: ["Джордж Орвелл"],
-//         genres: ["антиутопія", "політична фантастика"]
-//     },
-//     {
-//         title: "Портрет Доріана Грея",
-//         pages: 310,
-//         authors: ["Оскар Вайльд"],
-//         genres: ["роман", "філософська проза"]
-//     },
-//     {
-//         title: "Злочин і кара",
-//         pages: 430,
-//         authors: ["Федір Достоєвський"],
-//         genres: ["роман", "драма", "психологія", "автобіографія"]
-//     },
-//     {
-//         title: "Пригоди Тома Сойєра",
-//         pages: 290,
-//         authors: ["Марк Твен"],
-//         genres: ["пригоди", "гумор", "дитяча література"]
-//     },
-//     {
-//         title: "Лісова пісня",
-//         pages: 180,
-//         authors: ["Леся Українка"],
-//         genres: ["драма-феєрія", "поезія", "українська класика"]
+// let iterator = (arr) => {
+//     for (let ar of arr){
+//         console.log(ar)
 //     }
-// ];
+// }
 
-// printer(books)
+// iterator(array)
 
 // #59g0IsA
 
-// – створити функцію, яка створює параграф з текстом та виводить його через document.write. Текст задати через аргумент
-// function writer (text){
+// – створити функцію, яка створює параграф з текстом. Текст задати через аргумент
+
+// let writer = (text) => {
 //     document.write(`<p>${text}</p>`)
 // }
 
-// writer('cтворити функцію, яка створює параграф з текстом та виводить його через document.write. Текст задати через аргумент')
-// writer('створити функцію, яка створює ul з трьома елементами li та виводить його через document.write. Текст li задати через аргумент всім однаковий')
+// writer('щось виводжу')
 
 // #hOL6126
 
-// – створити функцію, яка створює ul з трьома елементами li та виводить його через document.write. Текст li задати через аргумент всім однаковий
-// function writer (text){
+// – створити функцію, яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
+
+// let writer = (text) => {
 //     document.write(`<ul>
 //         <li>${text}</li>
 //         <li>${text}</li>
 //         <li>${text}</li>
-//         </ul>`)
+//             </ul>`)
 // }
-// writer('Misha');
-// writer('Okten');
+
+// writer('Okten skool')
 
 // #0Kxco1edSN
 
-// – створити функцію, яка створює ul з  елементами li. Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл) та виводить його через document.write
+// – створити функцію, яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий.
+// Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
 
-// function writer(text, index) {
+// let writer = (text, n) => {
 //     document.write(`<ul>`)
-//     for (i = 0; i < index; i++) {
+
+//     for (let i = 0; i < n; i++){
 //         document.write(`<li>${text}</li>`)
 //     }
+
 //     document.write(`</ul>`)
 // }
-//
-// writer('Misha', 3);
-// writer('Okten', 14);
+
+// writer ("Misha", 8)
 
 // #gEFoxMMO
 
 // – створити функцію, яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список (ul li) та виводить його через document.write
 
-// function writer(array) {
+// let primitiveArray = [15, "JavaScript", true, 2025, false,"Okten", 3.14, "Hello", 0, "World",true, 100, "frontend", false, "ul-li"];
+
+// let writer = (array) => {
 //     document.write(`<ul>`)
-//     for (i = 0; i < array.length; i++) {
+//     for (let i = 0; i < array.length; i++){
 //         document.write(`<li>${array[i]}</li>`)
 //     }
 //     document.write(`</ul>`)
 // }
-//
-// writer(['Misha', 3, true, 56]);
 
-// function writer(array) {
-//     document.write(`<ul>`)
-//     for (const item of array) {
-//         document.write(`<li>${item}</li>`)
-//     }
-//     document.write(`</ul>`)
-// }
-//
-// writer(['Misha', 3, true, 56]);
+// writer(primitiveArray)
 
 // #bovDJDTIjt
 
 // – створити функцію, яка приймає масив об’єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об’єкту окремий блок.
 
-// function solve(obj) {
-//     for (let ob of obj) {
-//         document.write(`<div>${ob.id}, ${ob.name}, ${ob.age}</div>`)
+// const users = [
+//     {id: 1, name: "Anna", age: 22},
+//     {id: 2, name: "Oleh", age: 30},
+//     {id: 3, name: "Iryna", age: 27},
+//     {id: 4, name: "Dmytro", age: 35},
+//     {id: 5, name: "Kateryna", age: 19},
+//     {id: 6, name: "Mykhailo", age: 40},
+//     {id: 7, name: "Olena", age: 26},
+//     {id: 8, name: "Taras", age: 32},
+//     {id: 9, name: "Yulia", age: 28},
+//     {id: 10, name: "Andrii", age: 24}
+// ];
+
+// let writer = (array) => {
+//     for (let i = 0; i < array.length; i++) {
+//         document.write(`<div>Name - ${array[i].name}, age - ${array[i].age}</div>`);
 //     }
 // }
 //
-// let users = [
-//     {
-//         id: 1,
-//         name: 'Misha',
-//         age: 64
-//     },
-//     {
-//         id: 2,
-//         name: 'Misha',
-//         age: 64
-//     },
-//     {
-//         id: 3,
-//         name: 'Misha',
-//         age: 64
-//     },
-//     {
-//         id: 4,
-//         name: 'Misha',
-//         age: 64
-//     }
-// ]
-//
-// solve(users)
-
-// solve([
-//     {
-//         id: 1,
-//         name: 'Misha',
-//         age: 64
-//     },
-//     {
-//         id: 2,
-//         name: 'Misha',
-//         age: 64
-//     },
-//     {
-//         id: 3,
-//         name: 'Misha',
-//         age: 64
-//     },
-//     {
-//         id: 4,
-//         name: 'Misha',
-//         age: 64
-//     }
-// ]);
+// writer(users)
 
 // #pghbnSB
 
-// – створити функцію яка повертає найменьше число з масиву
+// – створити функцію, яка повертає найменше число з масиву
 
-// function minNumber(number) {
-//     let min = number[0];
-//     for (let i = 1; i <= number.length; i++) {
-//         if (i < min) {
-//             min = number[i];
+// const numbersArray = [56, -12, 0, 689, -450, 2, 24]
+//
+// let minNumber = (array)=>{
+//     let min = [0]
+//     for (let i = 1; i < array.length; i++) {
+//         if (array[i] < min) {
+//             min = array[i]
 //         }
 //     }
-//     return min;
+//     return min
 // }
 //
-// console.log(minNumber([54, 11, 68, 102, -10]));
+// console.log(minNumber(numbersArray));
 
 // #EKRNVPM
 
 // – створити функцію sum(arr), яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад sum([1,2,10]) //->13
-//
-// function sum(arr) {
-//     let summa = 0;
-//     for (let i = 0; i < arr.length; i++) {
-//         summa += arr[i];
-//     }
-//     return summa;
-// }
-//
-// console.log(sum([1, 2, 10]));
 
 // #kpsbSQCt2Lf
 
@@ -265,43 +164,8 @@
 
 // Приклад  swap([11,22,33,44],0,1) //=> [22,11,33,44]
 
-// function swap(arr,index1,index2) {
-//     let zam = arr[index1];
-//     arr[index1] = arr[index2];
-//     arr[index2] = zam;
-//     return arr;
-// }
-//
-// console.log(swap([11, 22, 33, 44], 0, 1));
+// #mkGDenYnNjn
 
-// #mkGDenYnNjn.html
+// – Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
 
-//  Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
-
-// Приклад exchange(10000,[{currency:’USD’,value:25},{currency:’EUR’,value:42}],’USD’) // => 400
-
-// function exchange(sumUAH,currencyValues,exchangeCurrency){
-//     for (let currencyValue of currencyValues){
-//        if (exchangeCurrency === currencyValue.currency) {
-//             return sumUAH / currencyValues.value
-//         }
-//     }
-// }
-
-// let value = exchange(10000,[{currency:'USD',value:25},{currency:'EUR',value:42}],'USD')
-
-// console.log(value)
-
-// function exchange(sumUAH,currencyValues,exchangeCurrency){
-//     for (let i = 0; i < currencyValues.length; i++){
-//        if (exchangeCurrency === currencyValues[i].currency) {
-//             return sumUAH / currencyValues[i].value
-//         }
-//     }
-// }
-
-// let value = exchange(10000,[{currency:'USD',value:25},{currency:'EUR',value:42}],'USD')
-// let value2 = exchange(10000,[{currency:'USD',value:25},{currency:'EUR',value:42}],'EUR')
-
-// console.log(value)
-// console.log(value2)
+// Приклад exchange(10000,[{currency:’USD’,value:40},{currency:’EUR’,value:42}],’USD’) // => 250
