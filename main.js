@@ -158,9 +158,28 @@
 
 // – створити функцію sum(arr), яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад sum([1,2,10]) //->13
 
+// let sum = (arr)=>{
+//     let on = 0;
+//     for(let i=0;i<arr.length;i++){
+//         on +=arr[i];
+//     }
+//     return on;
+// }
+//
+// console.log(sum([1, 2, 10]));
+
 // #kpsbSQCt2Lf
 
 // – створити функцію swap(arr,index1,index2). Функція міняє місцями значення у відповідних індексах
+
+// let swap = (arr, index1, index2) => {
+//     let ind1 = arr[index2];
+//     arr[index2] = arr[index1];
+//     arr[index1] = ind1;
+//     return arr;
+// }
+//
+// console.log(swap([11, 22, 33, 44], 0, 1));
 
 // Приклад  swap([11,22,33,44],0,1) //=> [22,11,33,44]
 
