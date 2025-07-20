@@ -11,11 +11,20 @@
 // – Знайти та вивести довжину наступних стрінгових значень
 //
 //  ‘hello world’
-//
 // ‘lorem ipsum’
-//
 // ‘javascript is cool’
 //
+// let str1 = 'hello world'
+// let str2 = 'lorem ipsum'
+// let str3 = 'javascript is cool'
+//
+// // console.log(str1.length)
+// // console.log(str2.length)
+// // console.log(str3.length)
+// let arr1 = [str1, str2, str3]
+// for (let i = 0; i < arr1.length; i++) {
+//     console.log(arr1[i].length)
+// }
 //
 //
 // #8lld9HMxXWB
