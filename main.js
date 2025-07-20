@@ -52,6 +52,19 @@
 //
 //       ‘HELLO WORLD’, ‘LOREM IPSUM’, ‘JAVASCRIPT IS COOL’
 //
+// let str1 = 'HELLO WORLD'
+// let str2 = 'LOREM IPSUM'
+// let str3 = 'JAVASCRIPT IS COOL'
+//
+// // console.log(str1.toLowerCase())
+// // console.log(str2.toLowerCase())
+// // console.log(str3.toLowerCase())
+//
+// let arr3 = [str1, str2, str3]
+//
+// for (let i = 0; i<arr3.length; i++){
+//     console.log(arr3[i].toLowerCase())
+// }
 //
 //
 // #0b89BkYZwu
