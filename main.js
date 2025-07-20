@@ -33,7 +33,18 @@
 //
 //       ‘hello world’, ‘lorem ipsum’, ‘javascript is cool’
 //
+// let str1 = 'hello world'
+// let str2 = 'lorem ipsum'
+// let str3 = 'javascript is cool'
 //
+// // console.log(str1.toUpperCase())
+// // console.log(str2.toUpperCase())
+// // console.log(str3.toUpperCase())
+//
+// let arr2 = [str1, str2, str3]
+// for (let i = 0; i < arr2.length; i++) {
+//     console.log(arr2[i].toUpperCase())
+// }
 //
 // #ClDsAm7xba7
 //
