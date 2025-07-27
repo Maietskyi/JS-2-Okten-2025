@@ -372,19 +372,53 @@
 //
 // описати колоду карт (від 6 до туза без джокерів). Більшу частину колоди можна описати з використанням циклу
 //
-// Після опису, використовуючи функції масивів:
+// const values = ['6', '7', '8', '9', '10', 'ace', 'jack', 'queen', 'king'];
+// const cardSuits = ['spade', 'diamond', 'heart', 'clubs']
 //
-//     – знайти піковий туз
+// const cards = [];
+// for (let cardSuit of cardSuits) {
+//     for (let value of values) {
+//         const card = {suit: cardSuit, value: value};
+//         if (cardSuit === 'heart' || cardSuit === 'diamond') {
+//             card.color = 'red'
+//         } else {
+//             card.color = 'black'
+//         }
+//         cards.push(card);
+//     }
+// }
+// console.log(cards);
 //
-//  – всі шістки
+// const cardSuits = ['spade', 'diamond', 'heart', 'clubs'];
+// const values = ['6', '7', '8', '9', '10', 'ace', 'jack', 'queen', 'king'];
 //
-//  – всі червоні карти
+// const cards = [];
+// for (let cardSuit of cardSuits) {
+//     for (let value of values) {
+//         const card = {cardSuit: cardSuit, value: value};
+//         if (cardSuit === 'heart' || cardSuit === 'diamond') {
+//             card.color = 'red';
+//         } else {
+//             card.color = 'black'
+//         }
+//         cards.push(card);
+//     }
+// }
+// console.log(cards);
 //
-//  – всі буби
-//
-//  – всі трефи від 9 та більше
-//
-//
+// // Після опису, використовуючи функції масивів:
+// //
+// //     – знайти піковий туз
+// console.log(cards.find(card => card.value === 'ace' && card.cardSuit === 'spade'));
+// //  – всі шістки
+// console.log(cards.filter(card => card.value === '6'));
+// //  – всі червоні карти
+// console.log(cards.filter(card => card.color === 'red'));
+// //  – всі буби
+// console.log(cards.filter(card => card.cardSuit === 'diamond'));
+// //  – всі трефи від 9 та більше
+// console.log(cards.filter(card => card.cardSuit === 'clubs' && (card.value !== '6' && card.value !== '7' && card.value !== '8')));
+// console.log(cards.filter(card => card.cardSuit === 'clubs' && (card.value !== '6' || card.value !== '7' || card.value !== '8'))); // не працює
 //
 // Приклад моделі об’єкту карти:
 //
