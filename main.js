@@ -443,16 +443,52 @@
 // Взяти описану колоду карт, та за допомогою reduce “упакувати” всі карти по “мастях” в об’єкт
 //
 // Приклад моделі кінцевого об’єкту
-//
-// {
-//
-//     spades:[],
-//
-//         diamonds:[],
-//
-//     hearts:[],
-//
-//     clubs:[]
-//
 
-// }
+const cardSuits = ['spade', 'diamond', 'heart', 'clubs'];
+const values = ['6', '7', '8', '9', '10', 'ace', 'jack', 'queen', 'king'];
+
+const cards = [];
+for (let cardSuit of cardSuits) {
+    for (let value of values) {
+        const card = {cardSuit: cardSuit, value: value};
+        if (cardSuit === 'heart' || cardSuit === 'diamond') {
+            card.color = 'red';
+        } else {
+            card.color = 'black'
+        }
+        cards.push(card);
+    }
+}
+console.log(cards);
+
+const reduceCards = cards.reduce((accum, card) => {
+    switch (card.cardSuit) {
+        case 'spade':
+            accum.spades.push(card);
+            break;
+        case 'diamond':
+            accum.diamonds.push(card);
+            break;
+        case 'heart':
+            accum.hearts.push(card);
+            break;
+        case 'club':
+            accum.clubs.push(card);
+            break;
+    }
+    return accum;
+}, {
+
+    spades: [],
+
+    diamonds: [],
+
+    hearts: [],
+
+    clubs: []
+
+
+});
+
+console.log(reduceCards);
+
