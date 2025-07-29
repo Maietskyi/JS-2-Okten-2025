@@ -444,51 +444,109 @@
 //
 // Приклад моделі кінцевого об’єкту
 
-const cardSuits = ['spade', 'diamond', 'heart', 'clubs'];
-const values = ['6', '7', '8', '9', '10', 'ace', 'jack', 'queen', 'king'];
+// const cardSuits = ['spade', 'diamond', 'heart', 'clubs'];
+// const values = ['6', '7', '8', '9', '10', 'ace', 'jack', 'queen', 'king'];
+//
+// const cards = [];
+// for (let cardSuit of cardSuits) {
+//     for (let value of values) {
+//         const card = {cardSuit: cardSuit, value: value};
+//         if (cardSuit === 'heart' || cardSuit === 'diamond') {
+//             card.color = 'red';
+//         } else {
+//             card.color = 'black'
+//         }
+//         cards.push(card);
+//     }
+// }
+// console.log(cards);
+//
+// const reduceCards = cards.reduce((accum, card) => {
+//     switch (card.cardSuit) {
+//         case 'spade':
+//             accum.spades.push(card);
+//             break;
+//         case 'diamond':
+//             accum.diamonds.push(card);
+//             break;
+//         case 'heart':
+//             accum.hearts.push(card);
+//             break;
+//         case 'club':
+//             accum.clubs.push(card);
+//             break;
+//     }
+//     return accum;
+// }, {
+//
+//     spades: [],
+//
+//     diamonds: [],
+//
+//     hearts: [],
+//
+//     clubs: []
+//
+//
+// });
+//
+// console.log(reduceCards);
 
-const cards = [];
-for (let cardSuit of cardSuits) {
-    for (let value of values) {
-        const card = {cardSuit: cardSuit, value: value};
-        if (cardSuit === 'heart' || cardSuit === 'diamond') {
-            card.color = 'red';
-        } else {
-            card.color = 'black'
-        }
-        cards.push(card);
-    }
-}
-console.log(cards);
-
-const reduceCards = cards.reduce((accum, card) => {
-    switch (card.cardSuit) {
-        case 'spade':
-            accum.spades.push(card);
-            break;
-        case 'diamond':
-            accum.diamonds.push(card);
-            break;
-        case 'heart':
-            accum.hearts.push(card);
-            break;
-        case 'club':
-            accum.clubs.push(card);
-            break;
-    }
-    return accum;
-}, {
-
-    spades: [],
-
-    diamonds: [],
-
-    hearts: [],
-
-    clubs: []
-
-
-});
-
-console.log(reduceCards);
-
+// const values = ['6', '7', '8', '9', '10', 'ace', 'jack', 'queen', 'king'];
+// const cardSuits = ['spade', 'diamond', 'heart', 'club']
+//
+// const cards = [];
+// for (let cardSuit of cardSuits) {
+//     for (let value of values) {
+//         const card = {value: value, cardSuit: cardSuit};
+//         if (cardSuit === 'diamond' || cardSuit === 'heart') {
+//             card.color = 'red'
+//         } else if (cardSuit === 'spade' || cardSuit === 'club') {
+//             card.color = 'black'
+//         }
+//         cards.push(card);
+//     }
+// }
+//
+// console.log(cards);
+// // Після опису, використовуючи функції масивів:
+// //
+// //  – знайти піковий туз
+// console.log(cards.find((card) => card.cardSuit === 'spade' && card.value === 'ace'));
+// //  – всі шістки
+// console.log(cards.filter(card => card.value === '6'));
+// //  – всі червоні карти
+// console.log(cards.filter(card => card.color === 'red'));
+// //  – всі буби
+// console.log(cards.filter(card => card.cardSuit === 'diamond'));
+// //  – всі трефи від 9 та більше
+// console.log(cards.filter(card => card.cardSuit === 'club' && (card.value !== '6' && card.value !== '7' && card.value !== '8')));
+//
+// // Взяти описану колоду карт, та за допомогою reduce “упакувати” всі карти по “мастях” в об’єкт
+// //
+// // Приклад моделі кінцевого об’єкт
+//
+// const reduceCards = cards.reduce((accum, card) => {
+//     switch (card.cardSuit) {
+//         case 'spade':
+//             accum.spades.push(card);
+//             break;
+//         case 'diamond':
+//             accum.diamonds.push(card);
+//             break;
+//         case 'heart':
+//             accum.hearts.push(card);
+//             break;
+//         case 'club':
+//             accum.clubs.push(card);
+//             break;
+//     }
+//     return accum;
+// }, {
+//     spades: [],
+//     diamonds: [],
+//     hearts: [],
+//     clubs: []
+// });
+//
+// console.log(reduceCards);
