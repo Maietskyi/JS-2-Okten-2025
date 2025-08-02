@@ -207,44 +207,53 @@
 //
 //     За допомоги циклу знайти, яка попелюшка повинна бути з принцом.
 
+//
+// class Cinderella {
+//     constructor(name, age, rozmir) {
+//         this.name = name;
+//         this.age = age;
+//         this.rozmir = rozmir;
+//     }
+// }
+//
+// let cinderellas = [
+//     cinderella1 = new Cinderella('Anna', 18, 35),
+//     cinderella2 = new Cinderella('Vika', 19, 36),
+//     cinderella3 = new Cinderella('Maria', 20, 37),
+//     cinderella4 = new Cinderella('Sofia', 21, 38),
+//     cinderella5 = new Cinderella('Ira', 22, 39),
+//     cinderella6 = new Cinderella('Ola', 23, 41),
+//     cinderella7 = new Cinderella('Daria', 24, 42)
+// ]
+//
+// class Prince {
+//     constructor(name, age, rozmi) {
+//         this.name = name;
+//         this.age = age;
+//         this.rozmi = rozmi;
+//     }
+// }
+//
+// let prince = new Prince('Misha', 20, 36);
 
-class Cinderella {
-    constructor(name, age, rozmir) {
-        this.name = name;
-        this.age = age;
-        this.rozmir = rozmir;
-    }
-}
-
-let cinderellas = [
-    cinderella1 = new Cinderella('Anna', 18, 35),
-    cinderella2 = new Cinderella('Vika', 19, 36),
-    cinderella3 = new Cinderella('Maria', 20, 37),
-    cinderella4 = new Cinderella('Sofia', 21, 38),
-    cinderella5 = new Cinderella('Ira', 22, 39),
-    cinderella6 = new Cinderella('Ola', 23, 41),
-    cinderella7 = new Cinderella('Daria', 24, 42)
-]
-
-class Prince {
-    constructor(name, age, rozmi) {
-        this.name = name;
-        this.age = age;
-        this.rozmi = rozmi;
-    }
-}
-
-let prince = new Prince('Misha', 20, 36);
-
-for (let cinderella of cinderellas) {
-    if (cinderella.rozmir === prince.rozmi) {
-        prince.jona = cinderella.name;
-    }
-}
-
-console.log(prince)
+// for (let cinderella of cinderellas) {
+//     if (cinderella.rozmir === prince.rozmi) {
+//         prince.jona = cinderella.name;
+//     }
+// }
+//
+// console.log(prince)
 //
 // ! Додатково, знайти необхідну попелюшку за допомогою функції масиву find та відповідного колбеку
+
+// let princes = cinderellas.find(cinderella => cinderella.rozmir === prince.rozmi);
+// if (princes) {
+//     prince.jona = princes.name
+// }
+// console.log(prince);
+// let princes = cinderellas.find(cinderella => cinderella.rozmir === prince.rozmi);
+//
+// console.log(princes)
 //
 //
 //
