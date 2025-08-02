@@ -162,7 +162,42 @@
 //
 //     — addDriver (driver) – приймає об’єкт, який “водій” з довільним набором полів, і додає його в поточний об’єкт car
 //
-//
+class Car {
+    constructor(model, producer, year, maxSpeed, engineDisplacement) {
+        this.model = model;
+        this.producer = producer;
+        this.year = year;
+        this.maxSpeed = maxSpeed;
+        this.engineDisplacement = engineDisplacement;
+    }
+        drive (maxSpeed) {
+            console.log(`їдемо зі швидкістю ${this.maxSpeed} км на годину`)
+        }
+        info () {
+            console.log(this);
+        }
+        increaseMaxSpeed (newSpeed) {
+            if (newSpeed > 0) {
+                this.maxSpeed += newSpeed;
+            }
+        }
+        changeYear (newValue) {
+            if (newValue > 1815) {
+                this.year = newValue;
+            }
+        }
+        addDriver (driver) {
+            this.driver = driver;
+        }
+}
+
+car1 = new Car('passat', 'volksvagen', 2011, 250, 1.6);
+console.log(car1)
+car1.drive()
+car1.info()
+car1.increaseMaxSpeed(5)
+car1.changeYear(2022)
+car1.addDriver({name:'Misha', age: 27, status: true})
 //
 //
 //
