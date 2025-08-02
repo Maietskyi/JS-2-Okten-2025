@@ -162,52 +162,82 @@
 //
 //     — addDriver (driver) – приймає об’єкт, який “водій” з довільним набором полів, і додає його в поточний об’єкт car
 //
-class Car {
-    constructor(model, producer, year, maxSpeed, engineDisplacement) {
-        this.model = model;
-        this.producer = producer;
-        this.year = year;
-        this.maxSpeed = maxSpeed;
-        this.engineDisplacement = engineDisplacement;
-    }
-        drive (maxSpeed) {
-            console.log(`їдемо зі швидкістю ${this.maxSpeed} км на годину`)
-        }
-        info () {
-            console.log(this);
-        }
-        increaseMaxSpeed (newSpeed) {
-            if (newSpeed > 0) {
-                this.maxSpeed += newSpeed;
-            }
-        }
-        changeYear (newValue) {
-            if (newValue > 1815) {
-                this.year = newValue;
-            }
-        }
-        addDriver (driver) {
-            this.driver = driver;
-        }
-}
-
-car1 = new Car('passat', 'volksvagen', 2011, 250, 1.6);
-console.log(car1)
-car1.drive()
-car1.info()
-car1.increaseMaxSpeed(5)
-car1.changeYear(2022)
-car1.addDriver({name:'Misha', age: 27, status: true})
+// class Car {
+//     constructor(model, producer, year, maxSpeed, engineDisplacement) {
+//         this.model = model;
+//         this.producer = producer;
+//         this.year = year;
+//         this.maxSpeed = maxSpeed;
+//         this.engineDisplacement = engineDisplacement;
+//     }
+//         drive (maxSpeed) {
+//             console.log(`їдемо зі швидкістю ${this.maxSpeed} км на годину`)
+//         }
+//         info () {
+//             console.log(this);
+//         }
+//         increaseMaxSpeed (newSpeed) {
+//             if (newSpeed > 0) {
+//                 this.maxSpeed += newSpeed;
+//             }
+//         }
+//         changeYear (newValue) {
+//             if (newValue > 1815) {
+//                 this.year = newValue;
+//             }
+//         }
+//         addDriver (driver) {
+//             this.driver = driver;
+//         }
+// }
 //
-//
-//
-//
-//
-//
+// car1 = new Car('passat', 'volksvagen', 2011, 250, 1.6);
+// console.log(car1)
+// car1.drive()
+// car1.info()
+// car1.increaseMaxSpeed(5)
+// car1.changeYear(2022)
+// car1.addDriver({name:'Misha', age: 27, status: true})
 //
 // #zg6Fifnqig
 //
 // – створити клас/функцію конструктор попелюшка з полями ім’я, вік, розмір ноги. Створити масив з 10 попелюшок.
+
+class Cinderella {
+    constructor(name, age, rozmir) {
+        this.name = name;
+        this.age = age;
+        this.rozmir = rozmir;
+    }
+}
+
+let cinderellas = [
+    cinderella1 = new Cinderella('Anna', 18, 35),
+    cinderella2 = new Cinderella('Vika', 19, 36),
+    cinderella3 = new Cinderella('Maria', 20, 37),
+    cinderella4 = new Cinderella('Sofia', 21, 38),
+    cinderella5 = new Cinderella('Ira', 22, 39),
+    cinderella6 = new Cinderella('Ola', 23, 41),
+    cinderella7 = new Cinderella('Daria', 24, 42)
+]
+
+class Prince {
+    constructor(name, age, rozmi) {
+        this.name = name;
+        this.age = age;
+        this.rozmi = rozmi;
+    }
+}
+
+let prince = new Prince('Misha', 20, 36);
+
+for (let cinderella of cinderellas) {
+    if (cinderella.rozmir === prince.rozmi) {
+        prince.jona = cinderella.name;
+    }
+}
+
+console.log(prince)
 //
 //     Створити об’єкт класу “принц” за допомоги класу який має поля ім’я, вік, туфелька яку він знайшов.
 //
