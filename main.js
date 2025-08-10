@@ -255,14 +255,70 @@
 //
 // console.log(princes)
 //
-//
-//
-//
-//
-//
-//
-//
-//
 // #gsKLAsNWM
 //
-// *Через Array.prototype. створити власний foreach, filter
+// // *Через Array.prototype. створити власний foreach, filter
+// Array.prototype.myForEach = function (callback) {
+//     const yourArray = this;
+//     for (const item of yourArray) {
+//         callback(item);
+//     }
+// };
+//
+//     [11, 22, 33, 44, 55].myForEach((x) => console.log(x));
+
+// Array.prototype.myForEach = function (callback) {
+//     for (let i = 0; i < this.length; i++) {
+//         callback(this[i], i, this); // елемент, індекс, весь масив
+//     }
+// };
+//
+// [11, 22, 33, 44, 55].myForEach((value, index, arr) => {
+//     console.log(`Index: ${index}, Value: ${value}, Array: [${arr}]`);
+// });
+
+// Array.prototype.myForEach = function (callback) {
+//     for (let i = 0; i < this.length; i++) {
+//         callback(this[i], i, this);
+//     }
+// };
+//
+//     [11, 22, 33, 44, 55].myForEach((x)=>{
+//         console.log(x);
+// })
+
+// Array.prototype.myFilter = function (predicate) {
+//     const arr = [];
+//     for (const item of this) {
+//         if (predicate(item)) {
+//             arr.push(item);
+//         }
+//     }
+//     return arr;
+// };
+//
+// function User(id, name, surname, email, phone, status) {
+//     this.id = id;
+//     this.name = name;
+//     this.surname = surname;
+//     this.email = email;
+//     this.phone = phone;
+//     this.status = status;
+// }
+//
+// let users = [
+//     new User(1, 'Misha', 'Maietskyi', 'mmaietskyi@gmail.com', '067 674 07 37', true),
+//     new User(2, 'Vika', 'Maietskyi', 'mmaietskyi@gmail.com', '067 674 07 38', false),
+//     new User(3, 'Roma', 'Maietskyi', 'mmaietskyi@gmail.com', '067 674 07 39', true),
+//     new User(4, 'Daria', 'Maietskyi', 'mmaietskyi@gmail.com', '067 674 07 40', false),
+//     new User(5, 'Vasyl', 'Maietskyi', 'mmaietskyi@gmail.com', '067 674 07 41', true),
+//     new User(6, 'Maria', 'Maietskyi', 'mmaietskyi@gmail.com', '067 674 07 42', false),
+//     new User(7, 'Anna', 'Maietskyi', 'mmaietskyi@gmail.com', '067 674 07 43', true),
+//     new User(8, 'Andriy', 'Maietskyi', 'mmaietskyi@gmail.com', '067 674 07 44', false),
+//     new User(9, 'Vitalik', 'Maietskyi', 'mmaietskyi@gmail.com', '067 674 07 45', true),
+//     new User(10, 'Ivan', 'Maietskyi', 'mmaietskyi@gmail.com', '067 674 07 46', false)
+// ];
+// console.log(users);
+//
+// const result = users.myFilter((user) => user.status);
+// console.log(result);
