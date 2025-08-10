@@ -61,10 +61,16 @@ function cloner(object) {
             }
         }
         console.log(functions);
-        const stringify = JSON.stringify(object);
-        const parsed = JSON.parse(stringify);
-        return parsed;
+        const cloneObj = JSON.parse(JSON.stringify(object));
+        for (let func of functions) {
+            cloneObj[func.key] = func.functionsClone;
+        }
+
+
+        console.log(cloneObj);
+        return cloneObj;
     }
+    throw new Error('!!!!!!!!!!')
 }
 
 console.log(cloner({
