@@ -53,16 +53,16 @@
 function cloner(object) {
     if (object) {
         let functions = [];
-        for (let key in object) {
+        for (const key in object) {
             console.log(typeof object[key]);
             if (typeof object[key] === "function") {
                 const functionsClone = object[key].bind({});
-                functions.push(functionsClone);
+                functions.push({functionsClone, key});
             }
         }
         console.log(functions);
         const cloneObj = JSON.parse(JSON.stringify(object));
-        for (let func of functions) {
+        for (const func of functions) {
             cloneObj[func.key] = func.functionsClone;
         }
 
