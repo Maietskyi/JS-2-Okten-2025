@@ -315,12 +315,16 @@ let courses = [
 const wrape = document.createElement('div')
 for (let course of coursesArray) {
     const container = document.createElement('div');
+    container.classList.add('container');
     const title = document.createElement('h1');
-    title.innerText = course.title;
 
+    title.innerText = course.title;
     const divUpp = document.createElement('div');
+    divUpp.classList.add('divUpp');
     const divAp = document.createElement('div');
+    divAp.classList.add('divAp');
     const divEp = document.createElement('div');
+    divEp.classList.add('divEp');
     divAp.innerText = `Month duration - ${course.monthDuration}`;
     divEp.innerText = `Hour duration - ${course.hourDuration}`;
 
