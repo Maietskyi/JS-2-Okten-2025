@@ -17,9 +17,18 @@
 //
 // – клонувати його повністю, та додати клон в body.
 //
+// const div1 = document.createElement('div');
+// div1.classList.add('wrapper');
+// div1.classList.add('collapse');
+// div1.classList.add('alpha');
+// div1.classList.add('beta');
+// div1.textContent = 'Hello World!';
 //
+// document.body.appendChild(div1);
 //
+// const div2 = div1.cloneNode(true);
 //
+// document.body.appendChild(div2);
 //
 //     #OPLI89c9G
 //
