@@ -1,347 +1,117 @@
-// JS. ДЗ 9
+// JS. ДЗ 10
 // Коди з лекцій та коди з ДЗ
 //
 // https://github.com/OktenSchool/javascript.git
 //
 //
 //
-//     #8Nmt60ZT
+//     #sH8c4er
 //
-// – створити блок,
+// – Створити довільний елемент з id = text та створити кнопку.Використовуючи JavaScript, зробіть так, щоб при натисканні на кнопку зникав елемент з id=”text”.
 //
-// – додати йому класи wrap, collapse, alpha, beta
+// document.getElementById('button1')
+//     .addEventListener('click', function () {
+//         document.getElementById('text').remove();
+//     })
 //
-// – додати стилі (довільні значення) : колір фону, колір тексту, розмір тексту
+// document.getElementsByTagName('button')[0]
+//     .addEventListener('click', function () {
+//         document.getElementById('text').style.display = 'none';
+//     })
 //
-// – додати цей блок в body.
+// #j693ca8
 //
-// – клонувати його повністю, та додати клон в body.
+// – створити інпут, який приймає вік людини, та кнопку, яка підтверджує дію. При натисканні на кнопку зчитати інформацію з інпуту та перевірити вік, чи менше він за 18, та повідомити про це користувача
 //
-// const div1 = document.createElement('div');
-// div1.classList.add('wrapper');
-// div1.classList.add('collapse');
-// div1.classList.add('alpha');
-// div1.classList.add('beta');
-// div1.textContent = 'Hello World!';
-//
-// document.body.appendChild(div1);
-//
-// const div2 = div1.cloneNode(true);
-//
-// document.body.appendChild(div2);
-//
-//     #OPLI89c9G
-//
-// – Є масив:
-//
-//
-// Зробити ul в середині якої будуть лежати елементи масиву (кожен в своєму li)
-//
-// let arr = ['Main', 'Products', 'About us', 'Contacts']
-//
-// const ul1 = document.createElement('ul');
-// for (let item of arr) {
-//     const lis = document.createElement('li');
-//     lis.innerHTML = item;
-//     ul1.appendChild(lis);
-// }
-// document.body.appendChild(ul1)
-//
-// #jeBqHV525U5
-//
-// – Є масив
-//
-// let coursesAndDurationArray = [
-//
-//     {title: ‘JavaScript Complex’, monthDuration: 5},
-//
-// {title: ‘Java Complex’, monthDuration: 6},
-//
-// {title: ‘Python Complex’, monthDuration: 6},
-//
-// {title: ‘QA Complex’, monthDuration: 4},
-//
-// {title: ‘FullStack’, monthDuration: 7},
-//
-// {title: ‘Frontend’, monthDuration: 4}
-//
-// ];
-//
-// Для кожного елементу масиву зробити блок, в якому вивести інформацію про title та monthDuration
-//
-// Завдання робити через цикли.
-//
-// let coursesAndDurationArray = [
-//     {title: 'JavaScript Complex', monthDuration: 5},
-//     {title: 'Java Complex', monthDuration: 6},
-//     {title: 'Python Complex', monthDuration: 6},
-//     {title: 'QA Complex', monthDuration: 4},
-//     {title: 'FullStack', monthDuration: 7},
-//     {title: 'Frontend', monthDuration: 4}
-// ];
-//
-// for (let course of coursesAndDurationArray) {
-//     const div = document.createElement('div');
-//     const p = document.createElement('p');
-//     p.innerHTML = `title - ${course.title}. Month duration -${course.monthDuration}`;
-//     div.appendChild(p);
-//     document.body.appendChild(div);
-// }
-//
-// =========================
-//
-//     #Kx1xgoKy8
-//
-// – Є масив
-//
-// let coursesAndDurationArray = [
-//
-//     {title: ‘JavaScript Complex’, monthDuration: 5},
-//
-// {title: ‘Java Complex’, monthDuration: 6},
-//
-// {title: ‘Python Complex’, monthDuration: 6},
-//
-// {title: ‘QA Complex’, monthDuration: 4},
-//
-// {title: ‘FullStack’, monthDuration: 7},
-//
-// {title: ‘Frontend’, monthDuration: 4}
-//
-// ];
-//
-//
-//
-// За допомоги скріпта для кожного елементу масиву зробити <div class=’item’> ,  в якому буде <h1 class=’heading’>  з title  елементу, та <p class=’description’> з monthDuration елементу.
-//
-//     Завдання робити через цикли.
-//
-// let coursesAndDurationArray = [
-//     {title: 'JavaScript Complex', monthDuration: 5},
-//     {title: 'Java Complex', monthDuration: 6},
-//     {title: 'Python Complex', monthDuration: 6},
-//     {title: 'QA Complex', monthDuration: 4},
-//     {title: 'FullStack', monthDuration: 7},
-//     {title: 'Frontend', monthDuration: 4}
-// ];
-// for (let course of coursesAndDurationArray) {
-//     const div = document.createElement('div');
-//     const h2 = document.createElement('h2');
-//     const p = document.createElement('p');
-//     div.classList.add('item');
-//     h2.classList.add('heading');
-//     p.classList.add('description');
-//
-//     h2.innerText = `Course - ${course.title}`;
-//     p.innerText = `Month duration -${course.monthDuration}`;
-//     div.append(h2, p);
-//     document.body.appendChild(div);
-// }
-//
-// =========
-//
-// – Є масив coursesArray котрий лежить в arrays.js (на цей момент ви вже знаєте де він знаходиться)
-//
-let coursesArray = [
-    {
-        title: 'JavaScript Complex',
-        monthDuration: 5,
-        hourDuration: 909,
-        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'node.js']
-    },
-    {
-        title: 'Java Complex',
-        monthDuration: 6,
-        hourDuration: 909,
-        modules: ['html',
-            'css',
-            'js',
-            'mysql',
-            'mongodb',
-            'angular',
-            'aws',
-            'docker',
-            'git',
-            'java core',
-            'java advanced']
-    },
-    {
-        title: 'Python Complex',
-        monthDuration: 6,
-        hourDuration: 909,
-        modules: ['html',
-            'css',
-            'js',
-            'mysql',
-            'mongodb',
-            'angular',
-            'aws',
-            'docker',
-            'python core',
-            'python advanced']
-    },
-    {
-        title: 'QA Complex',
-        monthDuration: 4,
-        hourDuration: 909,
-        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'git', 'QA/QC']
-    },
-    {
-        title: 'FullStack',
-        monthDuration: 7,
-        hourDuration: 909,
-        modules: ['html',
-            'css',
-            'js',
-            'mysql',
-            'mongodb',
-            'react',
-            'angular',
-            'aws',
-            'docker',
-            'git',
-            'node.js',
-            'python',
-            'java']
-    },
-    {
-        title: 'Frontend',
-        monthDuration: 4,
-        hourDuration: 909,
-        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'sass']
+const form1 = document.forms.form1;
+
+form1.addEventListener('submit', function (e) {
+    e.preventDefault();
+    const value = +form1.age.value;
+
+    const h2 = document.createElement('h2')
+
+    if (value < 18) {
+        h2.innerText = 'Вибачте, але Ваш вік менше 18 років.' + value;
+    } else {
+        h2.innerText = 'Вітаю, Ваш вік більше 18 років.' + value;
     }
-];
-let courses = [
-    {
-        title: 'JavaScript Complex',
-        monthDuration: 5,
-        hourDuration: 909,
-        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'node.js'],
-        logo: '',
-        price: 0,
-        rating: 5,
-        avgResult: 99
-    },
-    {
-        title: 'Java Complex',
-        monthDuration: 6,
-        hourDuration: 909,
-        modules: ['html',
-            'css',
-            'js',
-            'mysql',
-            'mongodb',
-            'react',
-            'angular',
-            'aws',
-            'docker',
-            'git',
-            'java core',
-            'java advanced'],
-        logo: '',
-        price: 0,
-        rating: 4.998,
-        avgResult: 97
-    },
-    {
-        title: 'Python Complex',
-        monthDuration: 6,
-        hourDuration: 909,
-        modules: ['html',
-            'css',
-            'js',
-            'mysql',
-            'mongodb',
-            'react',
-            'angular',
-            'aws',
-            'docker',
-            'git',
-            'python core',
-            'python advanced'],
-        logo: '',
-        price: 0,
-        rating: 4.812,
-        avgResult: 98
-    },
-    {
-        title: 'QA Complex',
-        monthDuration: 4,
-        hourDuration: 909,
-        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'QA/QC'],
-        logo: '',
-        price: 0,
-        rating: 4.65,
-        avgResult: 97
-    },
-    {
-        title: 'FullStack',
-        monthDuration: 7,
-        hourDuration: 909,
-        modules: ['html',
-            'css',
-            'js',
-            'mysql',
-            'mongodb',
-            'react',
-            'angular',
-            'aws',
-            'docker',
-            'git',
-            'node.js',
-            'python',
-            'java'],
-        logo: '',
-        price: 0,
-        rating: 4.772,
-        avgResult: 100
-    },
-    {
-        title: 'Frontend',
-        monthDuration: 4,
-        hourDuration: 909,
-        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'sass'],
-        logo: '',
-        price: 0,
-        rating: 4.53,
-        avgResult: 90
-    }
-];
+    document.body.appendChild(h2)
+})
+
 //
-// Створити для кожного елементу масиву свій блок, блок розділити блоками, в яких будуть зберігатись значення окремих властивостей, для властивості modules зробити список з елементами
+// #ymAmN2xJ
 //
-// Приклад структури знаходиться у файлі example.png, який лежить в папці з поточним файлом
+// Створити форму з трьома полями для name, surname, age та кнопкою. При натисканні на кнопку зчитати дані з полів, та вивести об’єкт в документ. Іншими словами : заповнили форму, натиснули кнопку, під формою з’явився блок з вашим об’єктом
 //
-const wrape = document.createElement('div')
-for (let course of coursesArray) {
-    const container = document.createElement('div');
-    container.classList.add('container');
-    const title = document.createElement('h1');
-
-    title.innerText = course.title;
-    const divUpp = document.createElement('div');
-    divUpp.classList.add('divUpp');
-    const divAp = document.createElement('div');
-    divAp.classList.add('divAp');
-    const divEp = document.createElement('div');
-    divEp.classList.add('divEp');
-    divAp.innerText = `Month duration - ${course.monthDuration}`;
-    divEp.innerText = `Hour duration - ${course.hourDuration}`;
-
-    divUpp.append(divAp, divEp);
-
-    const ul = document.createElement('ul');
-
-    if (course.modules) {
-        for (let module of course.modules) {
-            const li = document.createElement('li');
-            li.innerText = `Module: ${module}`;
-
-            ul.appendChild(li);
-        }
-    }
-
-    container.append(title, divUpp, ul);
-    wrape.appendChild(container)
-}
-document.body.appendChild(wrape)
+//
+//
+//
+//
+// #2VaLt4vDczH
+//
+// є сторінка, на якій є блок, в кому знаходиться цифра. Написати код, який при кожному перезавантажені сторінки буде додавати до неї +1
+//
+//
+//
+// #LhSfdhM3
+//
+// Є сторінка index.html (назва довільна), при відвідуванні якої в локальне сховище, в масив sessionsList зберігається інформація про дату та час відвідування сторінки. Є  сторінка sessionsListPage.html (назва довільна), при відвідуванні якої потрібно відмалювати всю інформацію про відвідування сторінки index.html. Інфу НЕ виводити в консоль, а малювати в DOM
+//
+//
+//
+//
+//
+//
+//
+// #Jg0gPO00
+//
+// створити конвертор ваги з кг в фунти. дані заповнюються через інпут. При введенні даних обрахунок стається миттєво, без натискань додаткових кнопок
+//
+//
+//
+// #RbQGnH5DuC
+//
+// В localStorage зберігаються масиви. Вам потрібно зробити функцію, які дістає потрібний вам масив з localStorage та додає в нього об’єкт
+//
+// сигнатура функції –
+//
+// addToLocalStorage(arrayName:string,objToAdd:any{}):void
+//
+//
+//
+//
+//
+//     #kUSgFqWY
+//
+// Створити 3 інпута та кнопку. Один визначає кількість рядків, другий – кількість ячеєк, третій – вміст ячеєк.
+//
+//     При натисканні кнопки вся ця інформація зчитується і формується табличка з відповідним вмістом.
+//
+//
+//
+//
+//
+//     #bq1zkx7WP
+//
+// *** (подібне було вище, але…будьте уважні в другій частині) створити сторінку з довільним блоком, в середині якого є значення “100грн”
+//
+// при перезавантаженні сторінки до значення додається по 10грн, але !!! зміна ціни відбувається тільки на перезавантаження, які відбулись пізніше ніж 10 секунд після попереднього.
+//
+//     При перезавантаженні, яке відбулось раніше ніж минуло 10 секунд, нічого не відбувається
+//
+//
+//
+//
+//
+// #NKB0tgWIK1G
+//
+// ***PAGINATION
+//
+// зробити масив на 100 об’єктів та дві кнопки prev next
+//
+// при завантаженні сторінки з’являються перші 10 об’єктів.
+//
+//     При натисканні next виводяться наступні 10 об’єктів
+//
+// При натисканні prev виводяться попередні 10 об’єктів
