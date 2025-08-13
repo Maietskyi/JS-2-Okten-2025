@@ -23,21 +23,40 @@
 //
 // – створити інпут, який приймає вік людини, та кнопку, яка підтверджує дію. При натисканні на кнопку зчитати інформацію з інпуту та перевірити вік, чи менше він за 18, та повідомити про це користувача
 //
-const form1 = document.forms.form1;
+// const form1 = document.forms.form1;
+//
+// form1.addEventListener('submit', function (e) {
+//     e.preventDefault();
+//
+//     const message = document.querySelector('#message');
+//     if (message) message.remove();
+//     const value = +form1.age.value;
+//
+//     const h2 = document.createElement('h2')
+//     h2.id = 'message'
+//
+//     if (value < 18) {
+//         h2.innerText = 'Вибачте, але Ваш вік менше 18 років.' + value;
+//     } else {
+//         h2.innerText = 'Вітаю, Ваш вік більше 18 років.' + value;
+//     }
+//     document.body.appendChild(h2)
+// })
 
-form1.addEventListener('submit', function (e) {
-    e.preventDefault();
-    const value = +form1.age.value;
-
-    const h2 = document.createElement('h2')
-
-    if (value < 18) {
-        h2.innerText = 'Вибачте, але Ваш вік менше 18 років.' + value;
-    } else {
-        h2.innerText = 'Вітаю, Ваш вік більше 18 років.' + value;
-    }
-    document.body.appendChild(h2)
-})
+// const form1 = document.forms.form1;
+// const message = document.querySelector('#message');
+//
+// form1.addEventListener('submit', function (e) {
+//     e.preventDefault();
+//
+//     const value = +form1.age.value;
+//
+//     if (value < 18) {
+//         message.textContent = `Вибачте, але Ваш вік менше 18 років. ${value}`;
+//     } else {
+//         message.textContent = `Вітаю, Ваш вік більше 18 років. ${value}`;
+//     }
+// });
 
 //
 // #ymAmN2xJ
