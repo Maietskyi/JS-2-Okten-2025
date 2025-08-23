@@ -156,7 +156,11 @@
 //
 // створити конвертор ваги з кг в фунти. дані заповнюються через інпут. При введенні даних обрахунок стається миттєво, без натискань додаткових кнопок
 //
-//
+// const numberInput = document.getElementById('number');
+// const text = document.getElementById('text');
+// numberInput.oninput = function () {
+//     text.innerText = +numberInput.value * 2.2;
+// }
 //
 // #RbQGnH5DuC
 //
@@ -165,9 +169,13 @@
 //
 // addToLocalStorage(arrayName:string,objToAdd:any{}):void
 //
-//
-//
-//
+// addToLocalStorage = function (arrayName, objToAdd) {
+//     if (arrayName) {
+//         arrayNameParse = JSON.parse(localStorage.getItem(arrayName));
+//         let arrayNamePush = arrayNameParse.push(objToAdd);
+//         localStorage.setItem(arrayName, JSON.stringify(arrayNamePush));
+//     }
+// }
 //
 //     #kUSgFqWY
 //
