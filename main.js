@@ -185,8 +185,29 @@
 //
 //     При натисканні кнопки вся ця інформація зчитується і формується табличка з відповідним вмістом.
 //
+// const tableForm = document.forms.generateTable;
+// console.log(tableForm);
 //
+// const table = document.getElementById('myTable');
+
+// tableForm.onsubmit = (e) => {
+//     e.preventDefault();
+//     table.innerText = '';
+//     const lines = tableForm.lines.value;
+//     const cells = tableForm.cells.value;
+//     const data = tableForm.data.value;
 //
+//     console.log(lines, cells, data);
+//     for (let l = 1; l < lines; l++) {
+//         const tr = document.createElement('tr');
+//         for (let c = 0; c < cells; c++) {
+//             const td = document.createElement('td');
+//             td.innerText = data;
+//             tr.appendChild(td);
+//         }
+//         table.append(tr);
+//     }
+// }
 //
 //
 //     #bq1zkx7WP
