@@ -169,11 +169,13 @@
 //
 // addToLocalStorage(arrayName:string,objToAdd:any{}):void
 //
-// addToLocalStorage = function (arrayName, objToAdd) {
+//  function addToLocalStorage (arrayName, objToAdd) {
 //     if (arrayName) {
 //         arrayNameParse = JSON.parse(localStorage.getItem(arrayName));
-//         let arrayNamePush = arrayNameParse.push(objToAdd);
-//         localStorage.setItem(arrayName, JSON.stringify(arrayNamePush));
+//         if (typeof objToAdd === 'object') {
+//             let arrayNamePush = arrayNameParse.push(objToAdd);
+//             localStorage.setItem(arrayName, JSON.stringify(arrayNamePush));
+//         }
 //     }
 // }
 //
